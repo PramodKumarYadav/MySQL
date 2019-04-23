@@ -108,8 +108,8 @@ public class MySQLdb {
                     }else {
                         jsonObject.put(column_name,resultSet.getObject(column_name));
                     }
-                    jsonArray.put(jsonObject);
                 }
+                jsonArray.put(jsonObject);
             }
         }else {
             System.out.println("No Results in the resultSet");
