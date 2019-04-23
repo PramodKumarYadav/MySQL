@@ -115,6 +115,10 @@ public class MySQLdb {
             System.out.println("No Results in the resultSet");
         }
 
+        System.out.println("No: of records in json : " + jsonArray.length());
+        for (Object json : jsonArray) {
+            System.out.println(json);
+        }
         return jsonArray;
     }
 }
